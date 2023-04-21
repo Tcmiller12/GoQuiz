@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 )
-
+//Sets problem & answers to strings
 type problem struct {
 	q string
 	a string
@@ -89,7 +89,7 @@ problemLoop:
 	fmt.Printf("Press enter to exit")
 	<-ansC
 }
-
+//Exit message
 func exit(msg string) {
 	fmt.Println(msg)
 	os.Exit(1)
